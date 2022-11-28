@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+/* 박스 A의 가로정렬 */
+.boxA>.boxA-1 {float: left; width: 20%;}
+
+/* 박스 B의 가로정렬 */
+.boxB
+.boxB>.boxB-1 {float: left; width: 50;}
+.boxB>.boxB-2 {float: right; width: 50;}
+.boxB>.boxB-3 {float: right; width: 50;}
