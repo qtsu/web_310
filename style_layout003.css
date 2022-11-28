@@ -1,0 +1,6 @@
+@charset 'utf-8';
+
+/* 박스 A와 박스B의 가로정렬 */
+.boxA {float: left; width: 70%;}
+.boxB {float: left; width: 30%;}
+.box3::after {content: ""; clear: both; display: block;}
