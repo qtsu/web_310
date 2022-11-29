@@ -21,17 +21,26 @@
 
 /* 플랙스정렬방식 */
 
-/* wrap 플랙스정렬 */
-.wrap {display: flex;}
-.boxA {width: 20%; display: flex; flex-direction: column;}
-.boxA>div {flex: 1;}
-.boxA-2 {width: 80%;}
 
-/* 박스C플랙스정렬 */
-.boxC {display: flex;}
-.boxC>div {flex: 1;}
 
-/* 박스D플랙스정렬 */
-.boxD {display: flex;}
-.box6 {width: 80%;}
-.box7 {width: 20%;}
+
+
+
+
+@media (min-width:960px){/* wrap 플랙스정렬 */
+  .wrap {display: flex;}
+  .boxA {width: 20%; display: flex; flex-direction: column-reverse;}
+  .boxA>div {flex: 1;}
+  .boxA-2 {width: 80%;}}
+
+  @media (min-width:600px){/* 박스C플랙스정렬 */
+    .boxC {display: flex; flex-wrap: wrap;}
+    .box3 {width: 20%;}
+    .box4 {width: 50%;}
+    .box5 {width: 50%;}
+    .boxC>div {flex: 1;}}
+
+  @media (min-width:320px){/* 박스D플랙스정렬 */
+    .boxD {display: flex;}
+    .box6 {width: 80%;}
+    .box7 {width: 20%;}}
