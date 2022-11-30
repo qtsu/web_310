@@ -1,0 +1,20 @@
+@charset 'utf-8';
+
+* {margin: 0; padding: 0;}
+
+/* 미디어쿼리구간######################################################## */
+
+/* 태블릿구간 */
+/* 600px 이상일 때############################# */
+@media (min-width: 768px) {
+/* 넷과 다섯의 가로정렬 */
+.boxfour {width: 50%; float: left;}
+.boxfive {width: 50%; float: left;}
+.boxZ::after {content: ""; clear: both; display: block;}
+}
+
+/* 웹구간 */
+/* 1280px이상일 때############################# */
+@media (min-width:1280px) {
+  .boxone, .boxZ {width: 1190px; margin: 0 auto;}
+}

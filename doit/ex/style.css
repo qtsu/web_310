@@ -1,0 +1,30 @@
+@charset 'utf-8';
+
+* {margin: 0; padding: 0;}
+
+#wrap {display: flex; flex-flow: row wrap;
+      width: 90%; margin: auto;}
+
+.header {display: flex; width: 100%;
+        position: relative; justify-content: flex-end;}
+.header>h1 {background-color: rgb(197, 136, 157);
+            width: 100%; height: 90px;}
+
+.photo_section {width: 33%; height: 700px; background-color: beige;}
+
+.basic_post_section {width: 35%; background-color: rgb(218, 200, 214);}
+
+.content_section {width: 32%; background-color: rgb(197, 179, 197);}
+
+.favourite_section {width: 25%; height: 350px; background-color: aliceblue;}
+
+.hobby_section {width: 25%; background-color: rgb(231, 229, 245);}
+
+.license_section {width: 20%; background-color: rgb(245, 240, 255);}
+
+.banner_section {width: 30%; display: flex; flex-direction: column;}
+.banner_section>div {flex: 1;}
+.banner_box_01 {background-color: #e3f3e7;}
+.banner_box_02 {background-color: #e1e4de;}
+
+.footer {width: 100%; height: 200px; background-color: rgb(216, 216, 216);}
