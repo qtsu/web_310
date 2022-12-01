@@ -5,16 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>나의소개</title>
+  <!-- 폰트어썸연결 -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/ea991c5122.js"></script>
+  <!-- 외부스타일시트 -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/ex_reset.css">
 </head>
 <body>
   <div id="wrap">
+    <section class="info_section">
+      <ul class="info_list">
+        <li><a href="#"><i class="fa fa-address-card" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-gratipay" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-slack" aria-hidden="true"></i></a></li>
+      </ul>
+    </section>
     <header class="header">
-      <h1>KIM SU JEONG</h1>
-      <nav></nav>
+      <h1 class="logo">KIM SU JEONG</h1>
+      <nav class="menu">
+        <ul class="menu_button">
+          <li><a href="#">INFORMATION</a><span class="sub_menu_toggle_button">하위메뉴토글버튼</span></li>
+          <li><a href="#">FAVOURITE</a><span class="sub_menu_toggle_button">하위메뉴토글버튼</span></li>
+          <li><a href="#">GALLERY</a><span class="sub_menu_toggle_button">하위메뉴토글버튼</span></li>
+        </ul>
+      </nav>
+      <span class="menu_toggle_button">전체 메뉴 토글버튼</span>
     </header>
-    <section class="photo_section"><img src="kakao.jpg" alt="" width="752" height="auto"></section>
-    <section class="basic_post_section"><b><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita porro sunt quam minus aliquam animi pariatur consequatur aut asperiores, accusantium aperiam id inventore perspiciatis aspernatur est dolorem temporibus ipsum sint!<br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda harum et, illo cumque sint pariatur architecto deserunt neque accusamus numquam sed at nesciunt temporibus dolore.<br><br> Tempore delectus sint assumenda ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit modi quo vitae.<br><br> Saepe, assumenda voluptatem modi sit consequatur error temporibus esse, et omnis quod a minus ut hic rerum! Rerum</h3></b>!</section>
+    <section class="photo_section"><img src="kakao.jpg" alt=""></section>
+    <section class="basic_post_section"></section>
     <section class="content_section"></section>
 
     <section class="favourite_section"></section>

@@ -1,30 +1,36 @@
+/* 언어설정 */
 @charset 'utf-8';
 
+/* 전체설정 */
 * {margin: 0; padding: 0;}
 
-#wrap {display: flex; flex-flow: row wrap;
-      width: 90%; margin: auto;}
+#wrap {display: flex; flex-flow: row wrap; width: 90%; margin: 0 auto;}
 
-.header {display: flex; width: 100%;
-        position: relative; justify-content: flex-end;}
-.header>h1 {background-color: rgb(197, 136, 157);
-            width: 100%; height: 90px;}
+/* 헤더설정 */
+.header {display: flex; width: 100%; position: relative; justify-content: flex-end;}
+.header>h1 {background-color: rgb(197, 136, 157); width: 100%; height: 90px; position: absolute;}
+.header>nav {background-color: rgb(197, 136, 157); width: 80%; height: 80px;}
 
+/* 프로필사진영역 */
 .photo_section {width: 33%; height: 700px; background-color: beige;}
 
+/* 기본정보영역 */
 .basic_post_section {width: 35%; background-color: rgb(218, 200, 214);}
 
+/* 작품영역 */
 .content_section {width: 32%; background-color: rgb(197, 179, 197);}
 
-.favourite_section {width: 25%; height: 350px; background-color: aliceblue;}
+/* 좋아하는것영역 */
+.favourite_section {width: 33%; height: 350px; background-color: aliceblue;}
 
-.hobby_section {width: 25%; background-color: rgb(231, 229, 245);}
+/* 취미영역 */
+.hobby_section {width: 35%; background-color: rgb(231, 229, 245);}
 
-.license_section {width: 20%; background-color: rgb(245, 240, 255);}
-
-.banner_section {width: 30%; display: flex; flex-direction: column;}
+/* 배너영역 */
+.banner_section {width: 32%; display: flex; flex-direction: column;}
 .banner_section>div {flex: 1;}
 .banner_box_01 {background-color: #e3f3e7;}
 .banner_box_02 {background-color: #e1e4de;}
 
+/* 푸터영역 */
 .footer {width: 100%; height: 200px; background-color: rgb(216, 216, 216);}

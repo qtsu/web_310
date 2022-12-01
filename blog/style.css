@@ -1,8 +1,26 @@
 /* 언어설정 */
 @charset 'utf-8';
 
+/* 구글폰트설정 */
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
 /* 전체설정 */
 * {margin: 0; padding: 0;}
+
+ul {list-style: none;}
+a {text-decoration: none; color: #000;}
+
+/* 기본CSS */
+/* 로고설정 */
+.logo {font-size: 30px; font-weight: normal; font-family: 'Paytone One', sans-serif;}
+.logo a {color: #000; text-decoration: none;}
+
+/* 메뉴설정 */
+.gnb>ul {display: flex;}
+.gnb>ul>li {width: auto;}
+.gnb>ul>li>a {display: block; padding: 15px; font-size: 14px;}
+
+.box2 {background-color: #7cbac1;}
 
 /* 미디어쿼리구간######################################################## */
 
@@ -21,5 +39,5 @@
 /* 웹구간 */
 /* 1280px이상일 때############################# */
 @media (min-width:1280px){
-  .box1, .boxA {width: 1190px; margin: 0 auto;}
+  .box1, .boxA, .gnb {width: 1190px; margin: 0 auto;}
 }

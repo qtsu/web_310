@@ -1,20 +1,42 @@
+/* 언어설정 */
 @charset 'utf-8';
 
+/* 구글폰트설정 */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+/* 전체설정 */
 * {margin: 0; padding: 0;}
+
+ul {list-style: none;}
+a {text-decoration: none; color: black;}
+
+/* 기본CSS */
+/* 로고설정 */
+.logo {font-size: 50px; font-family: 'Source Code Pro', monospace;}
+.logo a {color: brown;}
+
+/* 메뉴설정 */
+.menu>ul {display: flex;}
+.menu>ul>li {width: auto;}
+.menu>ul>li>a {display: block; padding: 20px; font-size: 15px;}
+
+.boxtwo {background-color: darkorange;}
 
 /* 미디어쿼리구간######################################################## */
 
+/* 모바일구간 */
+
 /* 태블릿구간 */
-/* 600px 이상일 때############################# */
+/* 768px 이상일 때############################# */
 @media (min-width: 768px) {
 /* 넷과 다섯의 가로정렬 */
-.boxfour {width: 50%; float: left;}
-.boxfive {width: 50%; float: left;}
+.boxfour {width: 70%; float: left;}
+.boxfive {width: 30%; float: left;}
 .boxZ::after {content: ""; clear: both; display: block;}
 }
 
 /* 웹구간 */
 /* 1280px이상일 때############################# */
 @media (min-width:1280px) {
-  .boxone, .boxZ {width: 1190px; margin: 0 auto;}
+  .boxone, .boxZ, .boxtwo {width: 1190px; margin: 0 auto;}
 }
