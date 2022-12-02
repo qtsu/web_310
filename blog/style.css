@@ -14,13 +14,64 @@ a {text-decoration: none; color: #000;}
 /* 로고설정 */
 .logo {font-size: 30px; font-weight: normal; font-family: 'Paytone One', sans-serif;}
 .logo a {color: #000; text-decoration: none;}
-
 /* 메뉴설정 */
 .gnb>ul {display: flex;}
 .gnb>ul>li {width: auto;}
 .gnb>ul>li>a {display: block; padding: 15px; font-size: 14px;}
 
 .box2 {background-color: #7cbac1;}
+
+/* 기사설정 */
+.story {}
+.story h2 {font-size: 36px; top: 0; margin-bottom: 20px;}
+.story time {}
+.story p {margin-top: 10px; margin-bottom: 20px;}
+.story h3 {margin-top: 40px; border-left: solid 10px #7cbac1;
+          padding-left: 10px; font-weight: normal;
+          font-size: 24px;}
+.story img {width: 100%; height: auto;}
+
+/* 사이드메뉴 */
+.sidemenu {margin-bottom: 30px;}
+.sidemenu h3 {color: #666666; font-size: 18px; margin-top: 0; margin-bottom: 10px; border-bottom: dotted 2px #dddddd;}
+.sidemenu ul {}
+.sidemenu li {}
+.sidemenu li a {display: block; padding: 5px; font-size: 14px;}
+
+/* 추천기사 */
+.recommend {margin-bottom: 30px;}
+.recommend h3 {color: #666666; font-size: 18px; margin-top: 0; margin-bottom: 10px; border-bottom: dotted 2px #dddddd;}
+.recommend ul {}
+.recommend li {}
+.recommend li a {display: block; padding: 5px; font-size: 14px;}
+
+/* 인기기사 */
+.popular {}
+.popular h3 {color: #666666; font-size: 18px; margin-top: 0; margin-bottom: 10px; border-bottom: dotted 2px #dddddd;}
+.popular ul {}
+.popular li {}
+.popular li a {display: block; padding: 5px; font-size: 14px;}
+
+/* 푸터설정 */
+.box5 {border-top: solid 1px #333333;}
+.copyright {font-size: 14px; color: #666666;}
+
+/* 박스간격설정 */
+/* 위아래간격 */
+/* 마진으로 간격설정
+.box1 {margin-top: 8px; margin-bottom: 8px;}
+.box2 {margin-top: 40px; margin-bottom: 30px;}
+.box4 {margin-top: 40px; margin-bottom: 30px;}
+.box5 {margin-top: 15px; margin-bottom: 15px;}*/
+
+/* 패딩으로 간격설정 */
+.box1 {padding-top: 8px; padding-bottom: 8px;}
+.box3 {padding-top: 40px; padding-bottom: 30px;}
+.box4 {padding-top: 40px; padding-bottom: 30px;}
+.box5 {padding-top: 15px; padding-bottom: 15px;}
+
+/* 좌우간격설정 */
+
 
 /* 미디어쿼리구간######################################################## */
 
@@ -32,12 +83,11 @@ a {text-decoration: none; color: #000;}
 /* 박스3과 박스4의 가로정렬 */
 .box3 {width: 70%; float: left;}
 .box4 {width: 30%; float: left;}
-
 .boxA::after {content: ""; clear: both; display: block;}
-}
+/* 박스3과 박스4의 좌우간격 */
+.box3 {padding-right: 50px; box-sizing: border-box;
+      -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}}
 
 /* 웹구간 */
 /* 1280px이상일 때############################# */
-@media (min-width:1280px){
-  .box1, .boxA, .gnb {width: 1190px; margin: 0 auto;}
-}
+@media (min-width:1280px){.box1, .boxA, .gnb, .copyright {width: 1190px; margin: 0 auto;}}

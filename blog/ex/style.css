@@ -12,15 +12,49 @@ a {text-decoration: none; color: black;}
 
 /* 기본CSS */
 /* 로고설정 */
-.logo {font-size: 50px; font-family: 'Source Code Pro', monospace;}
+.logo {font-size: 60px; font-family: 'Source Code Pro', monospace;}
 .logo a {color: brown;}
-
 /* 메뉴설정 */
 .menu>ul {display: flex;}
 .menu>ul>li {width: auto;}
-.menu>ul>li>a {display: block; padding: 20px; font-size: 15px;}
+.menu>ul>li>a {display: block; padding: 20px; font-size: 18px; font-weight: bold;}
 
 .boxtwo {background-color: darkorange;}
+
+/* 기사설정 */
+.means {}
+.means h2 {font-size: 45px; top: 0; margin-bottom: 20px;}
+.means time {}
+.means p {margin-top: 10px; margin-bottom: 20px; font-size: 30px;}
+.means h3 {margin-top: 40px; border-left: double 10px brown;
+  padding-left: 10px; font-weight: normal;
+  font-size: 40px;}
+.means img {width: 100%; height: auto;}
+/* TIP */
+.tip {margin-bottom: 80px;}
+.tip h3{color: darkgoldenrod; font-size: 20px; margin-left: 20px; margin-top: 0; margin-bottom: 10px; border-bottom: dotted 2px #dddddd;}
+.tip ul {margin-left: 30px;}
+.tip li {}
+.tip li a {display: block; padding: 5px; font-size: 15px;}
+/* EVERY */
+.every {}
+.every h3{color: darkgoldenrod; font-size: 20px; margin-left: 20px; margin-top: 0; margin-bottom: 10px; border-bottom: dotted 2px #dddddd;}
+.every ul {margin-left: 30px;}
+.every li {}
+.every li a {display: block; padding: 5px; font-size: 15px;}
+/* 푸터설정 */
+.boxfive {border-top: solid 1px darkgoldenrod;}
+.copyright {font-size: 15px; color: gainsboro}
+
+/* 패딩으로 간격설정 */
+.boxone {padding-top: 8px; padding-bottom: 8px;}
+.boxthree {padding-top: 40px; padding-bottom: 30px;}
+.boxfour {padding-top: 40px; padding-bottom: 30px;}
+.boxfive {padding-top: 15px; padding-bottom: 15px;}
+
+
+
+
 
 /* 미디어쿼리구간######################################################## */
 
@@ -29,14 +63,14 @@ a {text-decoration: none; color: black;}
 /* 태블릿구간 */
 /* 768px 이상일 때############################# */
 @media (min-width: 768px) {
-/* 넷과 다섯의 가로정렬 */
-.boxfour {width: 70%; float: left;}
-.boxfive {width: 30%; float: left;}
+/* three와 four의 가로정렬 */
+.boxthree {width: 70%; float: left;}
+.boxfour {width: 30%; float: left;}
 .boxZ::after {content: ""; clear: both; display: block;}
-}
+/* three와 four의 좌우간격 */
+.box {padding-right: 50px; box-sizing: border-box;
+-moz-box-sizing: border-box; -webkit-box-sizing: border-box;}}
 
 /* 웹구간 */
 /* 1280px이상일 때############################# */
-@media (min-width:1280px) {
-  .boxone, .boxZ, .boxtwo {width: 1190px; margin: 0 auto;}
-}
+@media (min-width:1280px) {.boxone, .boxZ, .menu, .copyright {width: 1190px; margin: 0 auto;}}

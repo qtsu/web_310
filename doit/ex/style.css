@@ -7,12 +7,12 @@
 #wrap {display: flex; flex-flow: row wrap; width: 90%; margin: 0 auto;}
 
 /* 헤더설정 */
-.header {display: flex; width: 100%; position: relative; justify-content: flex-end;}
-.header>h1 {background-color: rgb(197, 136, 157); width: 100%; height: 90px; position: absolute;}
-.header>nav {background-color: rgb(197, 136, 157); width: 80%; height: 80px;}
+.header {display: flex; }
+.header>h1 {background-color: rgb(197, 136, 157); height: 60px;}
+.header>nav {background-color: rgb(197, 136, 157);}
 
 /* 프로필사진영역 */
-.photo_section {width: 33%; height: 700px; background-color: beige;}
+.photo_section {width: 33%; height: 510px; background-color: beige;}
 
 /* 기본정보영역 */
 .basic_post_section {width: 35%; background-color: rgb(218, 200, 214);}
@@ -21,7 +21,7 @@
 .content_section {width: 32%; background-color: rgb(197, 179, 197);}
 
 /* 좋아하는것영역 */
-.favourite_section {width: 33%; height: 350px; background-color: aliceblue;}
+.favourite_section {width: 33%; height: 700px; background-color: aliceblue;}
 
 /* 취미영역 */
 .hobby_section {width: 35%; background-color: rgb(231, 229, 245);}
@@ -33,4 +33,4 @@
 .banner_box_02 {background-color: #e1e4de;}
 
 /* 푸터영역 */
-.footer {width: 100%; height: 200px; background-color: rgb(216, 216, 216);}
+.footer {width: 100%; height: 150px; background-color: rgb(216, 216, 216);}
