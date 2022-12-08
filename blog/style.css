@@ -37,20 +37,56 @@ a {text-decoration: none; color: #000;}
 .sidemenu ul {}
 .sidemenu li {}
 .sidemenu li a {display: block; padding: 5px; font-size: 14px;}
+.sidemenu li a i {color: #888888; margin-right: 5px; font-size: 16px;}
 
 /* 추천기사 */
 .recommend {margin-bottom: 30px;}
 .recommend h3 {color: #666666; font-size: 18px; margin-top: 0; margin-bottom: 10px; border-bottom: dotted 2px #dddddd;}
 .recommend ul {}
 .recommend li {}
-.recommend li a {display: block; padding: 5px; font-size: 14px;}
+.recommend li a {display: block; padding: 0px; font-size: 14px; position: relative; margin-bottom: 10px;}
+.recommend li a img {width: 100%; height: auto; vertical-align: bottom;}
+.recommend .text {position: absolute; bottom: 0; left: 0; width: 100%; padding: 5px 10px;
+                  background-color: rgba(00, 00, 00, 0.5); color: #fff; 
+                  box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
 
 /* 인기기사 */
 .popular {}
 .popular h3 {color: #666666; font-size: 18px; margin-top: 0; margin-bottom: 10px; border-bottom: dotted 2px #dddddd;}
 .popular ul {}
 .popular li {}
-.popular li a {display: block; padding: 5px; font-size: 14px;}
+.popular li a {display: block; padding: 5px; font-size: 14px; color: #2288bb; border-bottom: 1px dotted #dddddd;}
+.popular li a::after {content: ""; display: block; clear: both;}
+.popular img {float: left; width: 60px;}
+.popular .text {float: none; width: auto; margin-left: 60px; padding-left: 10px;}
+.popular span {display: block; font-size: 12px; color: #666666;}
+
+/* SNS설정 */
+.sns {margin-top: 40px;}
+.sns ul {display: flex;}
+.sns ul li {flex: 1;}
+.sns ul li a {display: block; text-align: center; background-color: #999; 
+              font-size: 12px; padding: 10px 0; color: #ffffff;}
+.sns ul li:nth-child(1) a {background-color: #1da1f2;}
+.sns ul li:nth-child(2) a {background-color: #1877f2;}
+.sns ul li:nth-child(3) a {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5851db+0,e1306c+33,f56040+66,ffdc80+100 */
+  background: #5851db; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #5851db 0%, #e1306c 33%, #f56040 66%, #ffdc80 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  #5851db 0%,#e1306c 33%,#f56040 66%,#ffdc80 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  #5851db 0%,#e1306c 33%,#f56040 66%,#ffdc80 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5851db', endColorstr='#ffdc80',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
+.sns ul li a i {}
+
+/* 관련기사설정 */
+.relation {margin-top: 40px; background-color: #f0f0d4; padding: 20px;}
+.relation h3 {margin-top: 0; margin-bottom: 5px; color: #727224;}
+.relation ul {}
+.relation ul::after {content: ""; display: block; clear: both;}
+.relation ul li {float: left; width: 25%;}
+.relation ul li a {display: block; padding: 5px; font-size: 12px; text-align: center;}
+.relation ul li a img {width: 100%;}
+.relation .text {}
 
 /* 푸터설정 */
 .box5 {border-top: solid 1px #333333;}
@@ -71,11 +107,30 @@ a {text-decoration: none; color: #000;}
 .box5 {padding-top: 15px; padding-bottom: 15px;}
 
 /* 좌우간격설정 */
+.box1, .box2, .boxA, .box5 {padding-left: 10px; padding-right: 10px;}
 
 
 /* 미디어쿼리구간######################################################## */
+/* 모바일구간1 */
+/* 599px 이하일 때 ############################# */
+@media (max-width:599px){
+/* sns 설정 */
+.sns span {text-indent: -9999px; display:inline-block}
+/* 관련기사 */
+.relation ul li {float: left; width: 50%;}
+.relation ul li:nth-child(odd) {clear: both;}
+/* odd - 홀수 / even - 짝수 */
+}
 
-/* 모바일구간 */
+/* 모바일구간2 */
+/* 600px 이상 767px 이하일 때 ################## */
+@media (min-width:600px) and (max-width:767px){
+/* 박스4-1과 박스4-2의 가로정렬 */
+.box4::after {content: ""; display: block; clear: both;}
+.box4-1 {float: left; width: 49%;}
+.box4-2 {float: left; width: 49%;}
+}
+
 
 /* 태블릿구간 */
 /* 768px 이상일 때############################# */
@@ -87,6 +142,7 @@ a {text-decoration: none; color: #000;}
 /* 박스3과 박스4의 좌우간격 */
 .box3 {padding-right: 50px; box-sizing: border-box;
       -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}}
+
 
 /* 웹구간 */
 /* 1280px이상일 때############################# */

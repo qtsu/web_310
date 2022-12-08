@@ -1,0 +1,27 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 콘텐츠영역설정 */
+.ex_content01 {width: 100%; height: auto; background-color: #d6becb; order: 2;}
+.ex_content01>div {padding: 30px 20px;}
+.ex_content01>div>p {background-color: #a8939e; padding: 30px; text-align: center; font-size: 22px; color: #ffffff;}
+.ex_content01>div>ul {display: flex; width: 100%; flex-wrap: wrap; margin-top: 40px; justify-content: space-around;}
+.ex_content01 li {margin: 30px 20px;}
+.ex_content01 li a {text-align: center; display: block; transition: all 0.6s; color: #725252;}
+.ex_content01 li a:hover {background-color: #a8939e; color: #ffffff;}
+.ex_content01 span {display: block; padding: 10px 0; box-sizing: border-box; transition: all 0.4s;}
+.ex_content01 li a:hover span {text-indent: 50px;}
+/* hover시 본인외에 변경할 수 있는 것은 자손자만 가능 */
+
+/* 콘텐츠예제영역설정 */
+.ex_content02 {width: 100%; height: auto; background-color: #b8b8b8; order: 3;}
+.ex_content02>div>p {background-color: #e4e4e4; padding: 30px; text-align: center; font-size: 22px; color: #725252;}
+.ex_content02 ul {display: flex; flex-wrap: wrap; justify-content: space-around; padding: 20px 0;}
+.ex_content02 li {}
+.ex_content02 a {display: block; padding: 0; width: 200px; height: 300px; position: relative; overflow: hidden;}
+.ex_content02 img {width: 100%; height: 100%;}
+.ex_content02 .text {position: absolute; top: 200%; left: 50%; background-color: rgba(206, 176, 176, 0.5); color: #ffffff; width: 100px; height: 100px; margin-top: -50px; margin-left: -50px; opacity: 0;/*hover시 변화할 값*/ justify-content: center; align-items: center; transition: all 0.6s;}
+.ex_content02 a:hover .text {top: 50%; opacity: 1;}

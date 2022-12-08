@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <title>HTML학습서_DOit!</title>
   <!-- 폰트어썸연결 -->
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -11,10 +11,20 @@
   <!-- 외부스타일시트 -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/reset.css">
+  <!-- 자바스크립트 -->
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <!-- 자바스크립트동적구현 -->
+  <script>
+    // 메뉴버튼을 클릭했을 때, gnb를 보이게 해라
+      $(document).ready(function(){
+        $('.menu_toggle_btn').click(function(){
+          $('.gnb').slideToggle()
+        })
+      })
+  </script>
 </head>
 <body>
   <div id="wrap">
-    
     <header class="header">
       <section class="info_section">
         <ul class="info_list">
@@ -81,7 +91,7 @@
     </section>
     <section class="popular_post_section">
       <h2 class="title">인기글</h2>
-      <ul class="polular_post_list">
+      <ul class="popular_post_list">
         <li><a href="#">인기글1</a></li>
         <li><a href="#">인기글2</a></li>
         <li><a href="#">인기글3</a></li>

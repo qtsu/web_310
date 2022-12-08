@@ -4,7 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>블로그형사이트예제</title>
+  <title>YAMI tteokbokki recipe</title>
+  <!-- 아이콘추가 -->
+  <!-- 안드로이드용 -->
+  <link rel="shortcut icon" href="img/YAMI.png">
+  <!-- ios용 -->
+  <link rel="apple-touch-icon" href="img/YAMI.png">
+  <!-- 전체화면설정(링크주소창사라짐) -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- 폰트어썸연결 -->
+  <script src="https://use.fontawesome.com/29f84cf8f7.js"></script>
   <!-- 그리드가이드연결
   <link rel="stylesheet" href="grid-guide.css">-->
   <!-- 외부스타일시트연결 -->
@@ -19,11 +29,11 @@
   <div class="boxtwo">
     <nav class="menu">
       <ul>
-        <li><a href="#">재료</a></li>
-        <li><a href="#">과정</a></li>
-        <li><a href="#">완성</a></li>
-        <li><a href="#">주의사항</a></li>
-        <li><a href="#">TIP</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">레시피모음</a></li>
+        <li><a href="#">커뮤니티</a></li>
+        <li><a href="#">마켓</a></li>
+        <li><a href="#">HELP</a></li>
       </ul>
     </nav> 
   </div>
@@ -31,8 +41,12 @@
     <div class="boxthree">
       <article class="means">
         <h2>떡볶이를 만들어 보아요</h2>
-        <time datetime="">2022년 12월 2일</time>
-        <p><img src="../ex/img/ffc3989147b447028641e24ab36d6aaf20210708171733_.jpg" alt=""></p>
+        <time datetime="">2022년 12월 6일 16:22:40</time>
+        <p><img src="img/EjrqhRdl.jpg" alt=""></p>
+        <p>오늘날, 아이부터 어른한테까지 많은 사랑을 받는 떡볶이!<br>
+          <br>가장 맛있는 조합은 무엇인지, 또는 특별한 비법이 궁금합니다.<br>
+          <br>오늘은 그 중 하나인 '밀떡볶이'에 대해 준비해 보았습니다.
+        </p>
         <h3>떡볶이 준비재료</h3>
         <p>- 재료: 밀떡 400g / 사각어묵 3장 / 양배추 160g / 대파 1대 / 물 550ml</p>
         <p>- 양념: 고추장 2큰술 / 양조간장 3.5큰술 / 고춧가루 4큰술 / 설탕 3큰술 / 통깨 두꼬집</p>
@@ -43,26 +57,89 @@
         <p>③ 양배추가 부드럽게 익으면 밀떡을 넣고 떡이 익으면 어묵을 넣습니다.</p>
         <p>④ 국물이 졸아들면 대파를 가위로 쫑쫑 썰어 넣어주시고 통깨 약간 뿌려 줍니다.</p>
       </article>
+      <aside class="relation">
+        <h3>관련기사</h3>
+        <ul>
+          <li><a href="#"><img src="img/wjsxhd.jpg" alt="">
+            <div class="text">60년 전통으로 내려오는 떡볶이 맛집</div>
+          </a></li>
+          <li><a href="#"><img src="img/rkstlr.jpg" alt="">
+            <div class="text">백종원의 간식타임 24화 - 쫄깃쫄깃한 밀당</div>
+          </a></li>
+          <li><a href="#"><img src="img/thsakt.jpg" alt="">
+            <div class="text">우리네 엄마 손맛 이야기</div>
+          </a></li>
+          <li><a href="#"><img src="img/vhzm.jpg" alt="">
+            <div class="text">아직도 포크로 떡볶이를 드십니까?</div>
+          </a></li>
+        </ul>
+      </aside>
+      <div class="sns">
+      <ul>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><span>트위터</span></a></li>
+        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><span>페이스북</span></a></li>
+        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i><span>인스타그램</span></a></li>
+        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i><span>유튜브</span></a></li>
+      </ul>
+    </div>
     </div>
     <div class="boxfour">
-      <aside class="tip">
-        <h3>비밀의 tip</h3>
-        <ul>
-          <li><a href="#">한우사골국물로 만든다고요?</a></li>
-          <li><a href="#">냉장떡과 냉동떡 차이</a></li>
-          <li><a href="#">설탕vs물엿</a></li>
-          <li><a href="#">소시지가 들어가면 더 맛있죠</a></li>
-        </ul>
-      </aside>
-      <aside class="every">
-        <h3>다양한 떡볶이's</h3>
-        <ul>
-          <li><a href="#">치즈떡볶이</a></li>
-          <li><a href="#">로제떡볶이</a></li>
-          <li><a href="#">짜장떡볶이</a></li>
-          <li><a href="#">바질떡볶이</a></li>
-        </ul>
-      </aside>
+      <div class="boxfour-1">
+        <aside class="tip">
+          <h3>비밀의 tip</h3>
+          <ul>
+            <li><a href="#"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i>한우사골국물로 만든다고요?</a></li>
+            <li><a href="#"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i>냉장떡과 냉동떡 차이</a></li>
+            <li><a href="#"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i>설탕vs물엿</a></li>
+            <li><a href="#"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i>소시지가 들어가면 더 맛있죠.</a></li>
+          </ul>
+        </aside>
+        <aside class="every">
+          <h3>다양한 떡볶이's</h3>
+          <ul>
+            <li><a href="#"><img src="img/clwm.jpg" alt="">
+              <div class="text" style="text-align: center">쭈~욱 늘어나는 치즈에 퐁당</div>치즈떡볶이</a></li>
+            <li><a href="#"><img src="img/fhwp.jpg" alt="">
+              <div class="text" style="text-align: center">자꾸자꾸 먹고싶어지는 매력</div>로제떡볶이</a></li>
+            <li><a href="#"><img src="img/WKwkd.jpg" alt="">
+              <div class="text" style="text-align: center">짜장면?풉 짜장떡볶이가 대세</div>짜장떡볶이</a></li>
+            <li><a href="#"><img src="img/qkwlf.jpg" alt="">
+              <div class="text" style="text-align: center">겉모습만 보고 판단 NO!</div>바질떡볶이</a></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="boxfour-2">
+        <aside class="popular">
+          <h3>click! click!</h3>
+          <ul>
+            <li><a href="#"><img src="img/tlrvna.jpg" alt="">
+              <div class="text">
+                내 입맛도 고급으로 만드는 럭셔리떡볶이!
+                <span>식품</span>
+              </div></a></li>
+            <li><a href="#"><img src="img/wpvna.jpg" alt="">
+              <div class="text">
+                떡을 집어도 떨어뜨리지않는 마법젓가락!
+                <span>제품</span>
+              </div></a></li>
+            <li><a href="#"><img src="img/Ejr.jpg" alt="">
+              <div class="text">
+                어머! 이건 사야해! 최고의 떡
+                <span>식품</span>
+              </div></a></li>
+            <li><a href="#"><img src="img/didqocn.jpg" alt="">
+              <div class="text">
+                양배추가 빠지면 섭합니다 김씨네 양배추
+                <span>식품</span>
+              </div></a></li>
+            <li><a href="#"><img src="img/wjqtl.jpg" alt="">
+              <div class="text">
+                내 마음에 퐁당! 빠진 접시!
+                <span>제품</span>
+              </div></a></li>
+          </ul>
+        </aside>
+      </div>
     </div>
   </div>
 <div class="boxfive">
