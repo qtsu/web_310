@@ -1,0 +1,35 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 구글폰트설정 */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Source+Code+Pro&display=swap');
+
+/* 전체설정 */
+* {margin: 0; padding: 7px;}
+body {font-family: 'Gloria Hallelujah', cursive; font-family: 'Source Code Pro', monospace; background: beige url(../img/bg.png);}
+
+/* 헤더영역 */
+header {}
+header h1 {font-size: 50px; margin: 20px 40px; text-align: center;}
+header p {font-size: 18px; font-weight: bolder; color: #999999; text-align: center; margin-bottom: 40px;}
+.post_home a {color: #666666;; font-size: 25px; text-underline-offset: 15px; text-decoration: none;}
+.post_img img {width: 300px;}
+.post_title a:hover {color: #222222;}
+.post_more {text-align: right;}
+.post_story {color: #777777; font-size: 15px; text-align: right; border: block;}
+.main_section p {font-size: 14px; text-decoration: none;}
+div main ul {font-size: 30px; display: flex; justify-content: center; list-style: none;}
+div a {text-decoration: none; color: #666666;}
+.cat ul {margin-bottom: 80px;}
+.news {margin-bottom: 80px;}
+.popular ul {margin-bottom: 80px;}
+/* 푸터영역 */
+footer ul {font-size: 14px; display: flex; justify-content: center; list-style: none;}
+footer a {text-decoration: none; color: #ffffff;}
+footer a:hover {color: #666666;}
+footer p {color: #444444; font-size: 12px; display: flex; justify-content: center;}
+
+/* 미디어쿼리!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width:500px){
+  .container {display: flex;}
+}
