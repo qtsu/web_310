@@ -2,34 +2,91 @@
 @charset 'utf-8';
 
 /* 구글폰트설정 */
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 
 /* 전체설정 */
-* {margin: 0; padding: 7px;}
-body {font-family: 'Gloria Hallelujah', cursive; font-family: 'Source Code Pro', monospace; background: beige url(../img/bg.png);}
+* {margin: 0; padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none;}
+body {background-image: linear-gradient(to left, #fff9ec 50%, #fae9ce 50%); background-size: 80px 10px;}
 
 /* 헤더영역 */
-header {}
-header h1 {font-size: 50px; margin: 20px 40px; text-align: center;}
-header p {font-size: 18px; font-weight: bolder; color: #999999; text-align: center; margin-bottom: 40px;}
-.post_home a {color: #666666;; font-size: 25px; text-underline-offset: 15px; text-decoration: none;}
-.post_img img {width: 300px;}
-.post_title a:hover {color: #222222;}
-.post_more {text-align: right;}
-.post_story {color: #777777; font-size: 15px; text-align: right; border: block;}
-.main_section p {font-size: 14px; text-decoration: none;}
-div main ul {font-size: 30px; display: flex; justify-content: center; list-style: none;}
-div a {text-decoration: none; color: #666666;}
-.cat ul {margin-bottom: 80px;}
-.news {margin-bottom: 80px;}
-.popular ul {margin-bottom: 80px;}
-/* 푸터영역 */
-footer ul {font-size: 14px; display: flex; justify-content: center; list-style: none;}
-footer a {text-decoration: none; color: #ffffff;}
-footer a:hover {color: #666666;}
-footer p {color: #444444; font-size: 12px; display: flex; justify-content: center;}
+header {background-image: url(../img/header.svg); height: 180px; background-size: cover; background-position: center top; margin-top: 40px;}
+header .logo {font-size: 60px; color: #5e5645; text-align: center; font-family: "Fredoka one"; padding-top: 30px; font-weight: normal;}
+.container {background: #ffffff; border-radius: 0 0 10px 10px; padding-left: 40px; padding-right: 40px; padding-bottom: 40px; padding-top: 18px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
+header p {font-size: 18px; font-weight: bolder; color: #999999; text-align: center; margin: 20px 0;}
 
-/* 미디어쿼리!!!!!!!!!!!!!!!!!!!!!!!!!! */
-@media (min-width:500px){
-  .container {display: flex;}
+/* 포스트내용 */
+.post_home {margin-bottom: 50px; position: relative;}
+.post_title {}
+.post_img {float: left; shape-outside: circle(); position: relative;}
+.post_img p {}
+.post_img .date {position: absolute; left: 0; top: -10px; font-size:20px ; width: 80px; height: 70px; background-color: #cfc38a; font-family: "Fredoka one"; color: #fff; border-radius: 70% 40% 30% 90%/50%; display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+.post_img .date span {display: block;}
+.post_img img {border-radius: 40% 70% 50% 30%/50%; object-fit: cover; height: 180px; width: 220px; margin-right: 60px;}
+.post_story {line-height: 1.6; font-size: 18px; margin-bottom: 16px; color: #949087;}
+.post_home:after {content: ""; clear: both; display: block;}
+.post_more {position: absolute; bottom: -45px; right: 0;}
+.post_more a {background-color: #e3c687; border-radius: 5px; text-decoration: none; color: #fff; padding: 10px 20px; display:inline-block; border: 3px dashed #daac48; box-shadow: 0 0 0 5px #e3c687;}
+.post_more a:hover {background-color: #daac48; border-color: #e3c687; box-shadow: 0 0 0 5px #daac48;}
+
+/* 포스트제목 */
+.post_title {background-image: linear-gradient(45deg,rgba(255, 255, 255, 1) 30%,rgb(204, 180, 143) 30%,rgb(231, 202, 158) 50%,rgba(255, 255, 255, 1) 50%,rgb(231, 202, 158) 50%,rgba(255, 255, 255, 1) 50%,rgba(255, 255, 255, 1) 50%,rgba(255, 255, 255, 1) 80%,rgb(231, 202, 158) 80%,rgb(231, 202, 158) 100%);
+  background-size: 6px 6px; padding-bottom: 10px; margin-bottom: 24px;}
+.post_title h2 {background-color: #fff; padding-left: 8px; padding-right: 8px; padding-bottom: 14px; font-size: 38px; font-family: "Dongle"; font-weight: 500;}
+.post_title h2 a {color: #949087; text-decoration: none;}
+
+/* 사이드구간설정 */
+.side_section {}
+.side_section>div {margin-bottom:40px; border: 1px solid #ccc; outline: 2px solid #ccc; outline-offset:4px ; border-radius: 6px; padding: 16px;}
+.side_section>div>h3 {font-size: 20px; font-family: "Fredoka one"; text-align: center; letter-spacing: 5px; color: #949087; margin-top: 14px; margin-bottom: 18px;}
+.side_section>div ul {list-style: none;}
+.side_section>div li {border-bottom: 1px dashed #cccccc; display: flex; align-items: center;}
+.side_section>div li:before {content: ''; width: 8px; height: 8px; border-radius: 50%; background-color: #e3c687; display: inline-block; margin-right: 10px;}
+.side_section>div a {display: block; color: #949087; text-decoration: none; padding: 16px 0; flex: 1;}
+
+.news p {font-size: 14px; color: #949087; line-height: 1.6; margin-top: 20px; margin-bottom: 20px;}
+.news form {display: flex;}
+.news input {padding: 16px;}
+.news input:focus {outline: none;}
+.news input[type='email'] {width: 75%; border-radius: 10px 0 0 10px; border: 2px solid #ccc; border-right: none}
+.news input[type='email']::placeholder {color: #ccc;}
+.news input[type='sumit'] {width: 25%; border-radius: 0 10px 10px 0; background-color: #e3c687; border: none; color: #fff; font-size: 18px; margin-left: -5px;}
+
+/* 페이지네이션설정 */
+.pagination {display: flex; justify-content: center;}
+.pagination li {margin: 0 10px;}
+.pagination li a {display: inline-flex; justify-content: center; align-items: center; font-size: 18px; color: #949087; width: 36px; height: 36px; border-radius: 50%;}
+.pagination li a:hover {background-color: #e3c687; color: #ffffff;}
+.pagination li:last-child a:hover {background-color: transparent; color: #949087; text-decoration: underline;}
+.pagination .current a {background-color: #ebdab6; color: #ffffff;}
+.pagination li:first-child a:hover {background-color: #cccccc; color: #ffffff; opacity: 0.8;}
+
+/* 페이지와 페이지의 구분라인 */
+.pagination li::after {content: "\2027"; margin-left: 20px; color: #949087;}
+.pagination li:last-child::after {content: "\0020"; margin-left: 20px; color: #949087;}
+.pagination li:nth-child(4)::after {content: "\0020"; margin-left: -10px; color: #949087;}
+
+/* 푸터설정 */
+footer {background-color: #b4a278; text-align: center; padding: 48px; margin-top: 60px;}
+footer ul {display: flex; justify-content: center;}
+footer li {margin: 0 12px;}
+footer li a {display: block; color: #ffffff;}
+footer li a:hover {color: #363636;}
+footer p {font-size: 14px; color: #363636; margin-top: 20px;}
+
+/* 미디어쿼리구간 */
+
+/* 600px이상구간 */
+@media (min-width: 600px) {
+  .container {display: flex; justify-content: space-between;}
+  .main_section {width: 68%;}
+  .side_section {width: 26%;}
+}
+
+@media (min-width: 1140px) {
+  header,.container {width: 1000px; margin: 0 auto;}
+  header {margin-top: 40px;}
 }

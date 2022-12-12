@@ -4,6 +4,9 @@
 
 * {margin: 0; padding: 0;}
 
+ul, ol {list-style: none;}
+a {text-decoration: none;}
+
 body {background-image: linear-gradient(to left, #faf6ed 50%, #efe8d5 50%); background-size: 40px 100%;}
 
 /* header 설정 ------------------ */
@@ -49,8 +52,27 @@ header p {color: #949087; text-align: center; font-size: 18px; margin: 20px 0;}
 .news input[type='email']::placeholder {color: #ccc;}
 .news input[type='sumit'] {width: 25%; border-radius: 0 10px 10px 0; background-color: #eda1a1; border: none; color: #fff; font-size: 18px; margin-left: -5px;}
 
+/* 페이지네이션설정 */
+.pagination {display: flex; justify-content: center;}
+.pagination li {margin: 0 10px;}
+.pagination li a {display: inline-flex; justify-content: center; align-items: center; font-size: 18px; color: #949087; width: 36px; height: 36px; border-radius: 50%;}
+.pagination li a:hover {background-color: #93d8d0; color: #ffffff;}
+.pagination li:last-child a:hover {background-color: transparent; color: #949087; text-decoration: underline;}
+.pagination .current a {background-color: #cccccc; color: #ffffff;}
+.pagination li:first-child a:hover {background-color: #cccccc; color: #ffffff; opacity: 0.8;}
 
+/* 페이지와 페이지의 구분라인 */
+.pagination li::after {content: "\2027"; margin-left: 20px; color: #949087;}
+.pagination li:last-child::after {content: "\0020"; margin-left: 20px; color: #949087;}
+.pagination li:nth-child(4)::after {content: "\0020"; margin-left: -10px; color: #949087;}
 
+/* 푸터설정 */
+footer {background-color: #949087; text-align: center; padding: 48px; margin-top: 60px;}
+footer ul {display: flex; justify-content: center;}
+footer li {margin: 0 12px;}
+footer li a {display: block; color: #ffffff;}
+footer li a:hover {color: #000000;}
+footer p {font-size: 14px; color: #333333; margin-top: 20px;}
 
 /* 미디어쿼리구간 */
 
