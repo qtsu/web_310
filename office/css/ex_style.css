@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* 전체설정 */
+* {margin: 0; padding: 0;}
+ul {list-style: none;}
+a {text-decoration: none; color: #555;}
+img {border: none; vertical-align: bottom;}
+html {scroll-snap-align: center;}
+
+/* 전체화면설정 */
+.wrapper {width: 1200px; margin: 0 auto;}
+section h2 {text-align: center;}
+section {height: 800px;}/*화면을 전체화면으로 옮기기전 임의설정*/
+#information {background-color: #ddd;}
+#note {background-color: #ccc;}
+#people {background-color: #bbb}
+#login {background-color: #aaa;}
+
+/* 헤더설정 */
+header {background-color: rgb(31, 50, 92); width: 100%; padding: 16px 0; position: fixed; left: 0; top: 0;}
+header .wrapper {display: flex; justify-content: space-between;}
+header .logo {display: block; font-size: 20px; color: #fff; font-weight: bold; padding: 10px 20px;}
+nav ul {display: flex;}
+nav li {}
+nav li a {display: block; font-size: 20px; color: #fff; font-weight: bold; padding: 10px 20px;}
+
+/* 메인이미지설정 */
+.mainImg {height: 600px; /*임의설정*/
+          background-color:#748297; background-image: url(../img/hero.jpg);
+          background-size: cover; background-position: center center; background-repeat: no-repeat;
+          background-blend-mode: screen; display: flex; align-items: center; 
+          justify-content: center; animation: bg 15s infinite;}
+
+/* 애니메이션설정 */
+@keyframes boldp {0% {font-weight: bold; font-size: 20px;}
+                  100% {font-weight: normal; font-size: 60px;}}
+@keyframes bg {0% {background-color: #4db1ec;}
+              12.5% {background-color: #1665cc;}
+              25% {background-color: #7398bf;}
+              37.5% {background-color: #3c4790;}
+              50% {background-color: #6483c4;}
+              62.5% {background-color: #7294ce;}
+              75% {background-color: #6f9dbc;}
+              87.5% {background-color: #0060af;}
+              100% {background-color: #4db1ec;}}
+@keyframes anih3 {0% {left: 1px;}
+                  100% {left: 2000px;}}
+
+.mainImg p {font-weight: bold; font-size: 10px; animation: boldp 15s infinite alternate;}
+.mainImg h3 {animation: anih3 5s infinite; animation-timing-function: linear; position: relative;}
