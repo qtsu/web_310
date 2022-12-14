@@ -77,7 +77,8 @@ nav li a {display: block; font-size: 20px; color: #fff; font-weight: bold; paddi
 /* .mainImg h3 {font-weight: bold; font-size: 20px; animation: boldh3 3s infinite alternate;} */
 
 /* 모양만들기 */
-.mainImg {background-color: rgb(255, 255, 255); clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+.mainImg {
+  background-color: rgb(255, 255, 255); clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
           background-blend-mode: screen; display: flex;}
 /* #news {height: 600px; background: linear-gradient(to top,#6ac8d8,#84de9c); clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);} */
 /* #ticket {height: 600px; background: linear-gradient(to top,#9a3895,#eea6d1 70%); clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);} */
