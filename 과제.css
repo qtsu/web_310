@@ -1,22 +1,71 @@
 @charset 'utf-8';
 
-@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
 
-body {background: linear-gradient(to left, #e4d4b6, #e6dcbe,#e4d4b6);
-      background-size: 80px 100%; font-family: 'Gamja Flower', cursive;}
+body {
+  background: linear-gradient(324deg, #c6bc83 4%, transparent 4%) -0.7in 0.43in,
+    linear-gradient(36deg, #c6bc83 4%, transparent 4%) 0.3in 0.43in,
+    linear-gradient(72deg, #fff 8.5%, transparent 8.5%) 0.3in 0.43in,
+    linear-gradient(288deg, #fff 8.5%, transparent 8.5%) -0.7in 0.43in,
+    linear-gradient(216deg, #fff 7.5%, transparent 7.5%) -0.7in 0.23in,
+    linear-gradient(144deg, #fff 7.5%, transparent 7.5%) 0.3in 0.23in,
+    linear-gradient(324deg, #c6bc83 4%, transparent 4%) -0.2in 0.93in,
+    linear-gradient(36deg, #c6bc83 4%, transparent 4%) 0.8in 0.93in,
+    linear-gradient(72deg, #fff 8.5%, transparent 8.5%) 0.8in 0.93in,
+    linear-gradient(288deg, #fff 8.5%, transparent 8.5%) -0.2in 0.93in,
+    linear-gradient(216deg, #fff 7.5%, transparent 7.5%) -0.2in 0.73in,
+    linear-gradient(144deg, #fff 7.5%, transparent 7.5%) 0.8in 0.73in, #e1d9ae;
+  background-size: 1in 1in;
+}
 
-h1 {font-size: 60px; text-align: center; 
-    letter-spacing: 10px; color: #3b1e08;}
-.table {width: 80%; margin: 0 auto;}
-.table ul {text-align: center; display: flex; list-style: none; margin: 0;
-          padding: 0; flex-wrap: wrap; width: 100%;}
-.title li {background-color: rgb(131, 200, 159); padding: 10px;
-          color: rgb(255, 255, 255); font-size: 35px; flex: 1; margin: 0 6px;
-          border-radius: 5px 5px 0px 0px; display:inline-block; 
-          border-top: 2px dashed rgb(83, 128, 101);  
-          border-left: 2px dashed rgb(83, 128, 101); border-right: 2px dashed rgb(83, 128, 101);}
-.write li {background-color:#eae59f ; height: 60px; font-size: 40px; 
-          color: #3b1e08; flex: 1; margin: 0 6px; display: flex; 
-          justify-content: center; align-items: center;
-          border-radius: 0px 0px 5px 5px; display:inline-block; border: 2px dashed rgb(255, 255, 255);}
-.write .show:hover {background-color:#dad47d ; display:inline-block; border: 2px dashed #fff;}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 10px;
+  color: #3b1e08;
+}
+.table {
+  width: 80%;
+  margin: 0 auto;
+}
+.table ul {
+  text-align: center;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.title li {
+  background-color: rgb(131, 200, 159);
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  flex: 1;
+  margin: 0 6px;
+  border-radius: 5px 5px 0px 0px;
+  display: inline-block;
+  border-top: 2px dashed rgb(83, 128, 101);
+  border-left: 2px dashed rgb(83, 128, 101);
+  border-right: 2px dashed rgb(83, 128, 101);
+}
+.write li {
+  background-color: #eae59f;
+  height: 60px;
+  font-size: 40px;
+  color: #3b1e08;
+  flex: 1;
+  margin: 0 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 5px 5px;
+  display: inline-block;
+  border: 2px dashed rgb(255, 255, 255);
+}
+.write .show:hover {
+  background-color: #dad47d;
+  display: inline-block;
+  border: 2px dashed #fff;
+}
