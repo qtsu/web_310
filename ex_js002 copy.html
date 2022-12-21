@@ -28,22 +28,28 @@
   </div>
 
   <script>
+  let kNumber = Number(0);
+  let mNumber=0;
+  let eNumber=0;
 
   document.getElementById('kor').addEventListener('click',
     function(event){
-      let kNumber=Number(prompt('당신의 국어점수는?'));
-      kor.innerHTML = kNumber
+      kNumber=Number(prompt('당신의 국어점수는?'));
+      kor.innerHTML = kNumber;
     })
   document.getElementById('math').addEventListener('click',
     function(event){
-      let mNumber=Number(prompt('당신의 수학점수는?'));
+      mNumber=Number(prompt('당신의 수학점수는?'));
       math.innerHTML = mNumber
     })
   document.getElementById('eng').addEventListener('click',
     function(event){
-      let eNumber=Number(prompt('당신의 영어점수는?'));
+      eNumber=Number(prompt('당신의 영어점수는?'));
       eng.innerHTML = eNumber
     })
+  document.getElementById('add')    
+    let sum = kNumber + mNumber + eNumber;
+    add.innerHTML = add
 
 </script>
 </body>
