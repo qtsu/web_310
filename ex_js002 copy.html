@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>평균값내기</title>
+  <link rel="stylesheet" href="ex_js002.css">
+
+</head>
+<body>
+  <h1>당신의성적표</h1>
+  <div class="table">
+      <ul class="title">
+          <li>국어</li>
+          <li>수학</li>
+          <li>영어</li>
+          <li>총점</li>
+          <li>평균</li>
+      </ul>
+      <ul class="write">
+          <li id="kor"></li>
+          <li id="math"></li>
+          <li id="eng"></li>
+          <li id="add"></li>
+          <li id="avg"></li>
+      </ul>
+  </div>
+
+  <script>
+
+  document.getElementById('kor').addEventListener('click',
+    function(event){
+      let kNumber=Number(prompt('당신의 국어점수는?'));
+      kor.innerHTML = kNumber
+    })
+  document.getElementById('math').addEventListener('click',
+    function(event){
+      let mNumber=Number(prompt('당신의 수학점수는?'));
+      math.innerHTML = mNumber
+    })
+  document.getElementById('eng').addEventListener('click',
+    function(event){
+      let eNumber=Number(prompt('당신의 영어점수는?'));
+      eng.innerHTML = eNumber
+    })
+
+</script>
+</body>
+</html>
