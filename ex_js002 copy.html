@@ -28,9 +28,14 @@
   </div>
 
   <script>
-  let kNumber = Number(0);
-  let mNumber=0;
-  let eNumber=0;
+  // let total = kNumber + mNumber + eNumber;
+
+  
+  let kNumber = 0;
+  let mNumber = 0;
+  let eNumber = 0;
+  let add = 0;
+  let avg = 0.0;
 
   document.getElementById('kor').addEventListener('click',
     function(event){
@@ -47,9 +52,15 @@
       eNumber=Number(prompt('당신의 영어점수는?'));
       eng.innerHTML = eNumber
     })
-  document.getElementById('add')    
-    let sum = kNumber + mNumber + eNumber;
-    add.innerHTML = add
+  document.getElementById('add',  
+    function(){
+      add=Number(alert(Number));
+      add.innerHTML = kNumber + mNumber + eNumber;
+    })
+  document.getElementById('avg')
+    // let average = total/3;
+    // add.innerHTML = kNumber + mNumber + eNumber;
+
 
 </script>
 </body>
