@@ -27,24 +27,37 @@
       </ul>
     </div>
 
-<script>
-
-document.getElementById('kor').addEventListener('click',
-    function(event){
-      let kNumber=Number(prompt('당신의 국어점수는?'));
-      kor.innerHTML = kNumber
-    })
-  document.getElementById('math').addEventListener('click',
-    function(event){
-      let mNumber=Number(prompt('당신의 수학점수는?'));
-      math.innerHTML = mNumber
-    })
-  document.getElementById('eng').addEventListener('click',
-    function(event){
-      let eNumber=Number(prompt('당신의 영어점수는?'));
-      eng.innerHTML = eNumber
-    })
-</script>
+    <script>
+      let kNumber
+      let mNumber
+      let eNumber
+      let sum
+    
+      document.getElementById('kor').addEventListener('click',
+        function(event){
+          kNumber=Number(prompt('당신의 국어점수는?'));
+          kor.innerHTML = kNumber;
+          sum=Number((kNumber+mNumber+eNumber));
+          add.innerHTML = sum;
+          avg.innerHTML = sum/3;
+        })
+      document.getElementById('math').addEventListener('click',
+        function(event){
+          mNumber=Number(prompt('당신의 수학점수는?'));
+          math.innerHTML = mNumber;
+          sum=Number((kNumber+mNumber+eNumber));
+          add.innerHTML = sum;
+          avg.innerHTML = sum/3;
+        })
+      document.getElementById('eng').addEventListener('click',
+        function(event){
+          eNumber=Number(prompt('당신의 영어점수는?'));
+          eng.innerHTML = eNumber
+          sum=Number((kNumber+mNumber+eNumber));
+          add.innerHTML = sum;
+          avg.innerHTML = sum/3;
+        })
+    </script>
 
 </body>
 </html>

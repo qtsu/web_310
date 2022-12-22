@@ -18,19 +18,9 @@ body {
   background-size: 1in 1in;
 }
 
-h1 {
-  font-size: 60px;
-  text-align: center;
-  letter-spacing: 10px;
-  color: #3b1e08;
-}
-.table {
-  width: 80%;
-  margin: 0 auto;
-}
-.table ul {
-  text-align: center;
-  display: flex;
+h1 {font-size: 60px; text-align: center; letter-spacing: 10px; color: #3b1e08;}
+.table {width: 80%; margin: 0 auto;}
+.table ul {text-align: center; display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
